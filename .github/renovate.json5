@@ -9,6 +9,7 @@
         "custom.regex",
         "gradle",
         "gradle-wrapper",
+        "nix",
         "npm",
         "pip-compile"
     ],
