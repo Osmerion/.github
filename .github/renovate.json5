@@ -3,6 +3,7 @@
         "config:base",
         "group:monorepos",
         "group:recommended",
+        "helpers:pinGitHubActionDigests",
         ":rebaseStalePrs",
         ":semanticCommitTypeAll(chore)"
     ],
@@ -10,6 +11,7 @@
     enabledManagers: [
         "cargo",
         "custom.regex",
+        "github-actions",
         "gradle",
         "gradle-wrapper",
         "nix",
@@ -70,6 +72,13 @@
         {
             description: "Update CI Java version",
             matchFileNames: ["\\.java-version$"],
+            addLabels: ["in:build"],
+            semanticCommitScope: null,
+            semanticCommitType: "build"
+        },
+        {
+            description: "Update GitHub Actions",
+            matchManagers: ["github-actions"],
             addLabels: ["in:build"],
             semanticCommitScope: null,
             semanticCommitType: "build"
