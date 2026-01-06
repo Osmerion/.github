@@ -49,9 +49,9 @@
     },
     packageRules: [
         {
-            "matchBaseBranches": ["/^release/.*/"],
-            "matchUpdateTypes": ["major"],
-            "enabled": false
+            matchBaseBranches: ["/^release/.*/"],
+            matchUpdateTypes: ["major"],
+            enabled: false
         },
         {
             description: "Update Gradle wrapper",
@@ -66,6 +66,13 @@
             addLabels: ["in:build"],
             semanticCommitScope: null,
             semanticCommitType: "build"
+        },
+        {
+            description: "Enable major updates for build dependencies in build.versions.toml",
+            matchFileNames: ["gradle/build.versions.toml"],
+            matchBaseBranches: ["/^release/.*/"],
+            matchUpdateTypes: ["major"],
+            enabled: true
         },
         {
             description: "Update library dependencies in libs.versions.toml",
