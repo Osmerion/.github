@@ -24,10 +24,10 @@
         {
             customType: "regex",
             fileMatch: [
-                "\\.java-version$",
+                "\\.java-version$"
             ],
             matchStrings: [
-                "(?<currentValue>\\S+)",
+                "(?<currentValue>\\S+)"
             ],
             datasourceTemplate: "java-version",
             depNameTemplate: "java",
