@@ -9,7 +9,7 @@
     ],
     labels: ["a:chore", "in:dependencies"],
     baseBranchPatterns: [
-        "master",
+        "$default",
         "/^release\\/.*/"
     ],
     enabledManagers: [
