@@ -8,6 +8,10 @@
         ":semanticCommitTypeAll(chore)"
     ],
     labels: ["a:chore", "in:dependencies"],
+    baseBranchPatterns: [
+        "master",
+        "/^release\\/.*/"
+    ],
     enabledManagers: [
         "cargo",
         "custom.regex",
@@ -44,6 +48,11 @@
         enabled: true
     },
     packageRules: [
+        {
+            "matchBaseBranches": ["/^release/.*/"],
+            "matchUpdateTypes": ["major"],
+            "enabled": false
+        },
         {
             description: "Update Gradle wrapper",
             matchManagers: ["gradle-wrapper"],
