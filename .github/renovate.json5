@@ -144,6 +144,7 @@
     ],
     prHourlyLimit: 0,
     prConcurrentLimit: 0,
+    useBaseBranchConfig: "merge",
     vulnerabilityAlerts: {
         enabled: true,
         vulnerabilityFixStrategy: "highest"
