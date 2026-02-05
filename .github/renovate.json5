@@ -5,7 +5,8 @@
         "group:recommended",
         "helpers:pinGitHubActionDigests",
         ":rebaseStalePrs",
-        ":semanticCommitTypeAll(chore)"
+        ":semanticCommitTypeAll(chore)",
+        "workarounds:disableGradleReplacements"
     ],
     labels: ["a:chore", "in:dependencies"],
     baseBranchPatterns: [
