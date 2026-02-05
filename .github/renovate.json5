@@ -141,6 +141,13 @@
             matchBaseBranches: ["/^release/.*/"],
             matchUpdateTypes: ["major"],
             enabled: true
+        },
+        {
+            "description": "Group Kotlin specific dependencies",
+            "groupName": "Kotlin",
+            "matchPackagePrefixes": [
+                "org.jetbrains.kotlin"
+            ]
         }
     ],
     prHourlyLimit: 0,
