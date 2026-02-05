@@ -6,7 +6,7 @@
         "group:recommended",
         "helpers:pinGitHubActionDigests",
         ":rebaseStalePrs",
-        ":semanticCommitTypeAll(chore)",
+        ":semanticCommitTypeAll(chore)"
     ],
     labels: ["a:chore", "in:dependencies"],
     baseBranchPatterns: [
