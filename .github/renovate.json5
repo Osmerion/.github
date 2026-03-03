@@ -148,6 +148,17 @@
             "matchPackageNames": [
                 "/^org\\.jetbrains\\.kotlin[\\.:][\\w.-]*/"
             ]
+        },
+        {
+            /*
+             * Ktor is released slowly in multiple batches for the different platforms. Delay update PRs for a few days
+             * to make sure that we don't get them too early.
+             */
+            description: "Wait until Ktor has been fully released",
+            matchPackageNames: [
+                "io.ktor:**"
+            ],
+            minimumReleaseAge: "5 days"
         }
     ],
     prHourlyLimit: 0,
