@@ -159,6 +159,18 @@
                 "io.ktor:**"
             ],
             minimumReleaseAge: "5 days"
+        },
+        {
+            /*
+             * For some reason, the Gradle team decided to put caching functionality behind stupidly invasive licensing
+             * terms. We won't upgrade to version 6.0.0 (or later) for now.
+             * (See also https://github.com/gradle/actions/releases/tag/v6.0.0)
+             */
+            "matchPackageNames": [
+                "gradle/actions"
+            ],
+            "allowedVersions": "<6.0.0",
+            "description": "Avoid GitHub Actions for Gradle commercial license restrictions"
         }
     ],
     prHourlyLimit: 0,
