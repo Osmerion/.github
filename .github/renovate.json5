@@ -109,6 +109,7 @@
         },
         {
             description: "Enable major updates for CI Java version",
+            matchManagers: ["custom.regex"],
             matchFileNames: ["\\.java-version$"],
             matchBaseBranches: ["/^release/.*/"],
             matchUpdateTypes: ["major"],
