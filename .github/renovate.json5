@@ -55,6 +55,13 @@
             enabled: false
         },
         {
+            description: "Enable major updates for CI Java version",
+            matchFileNames: ["\\.java-version$"],
+            matchBaseBranches: ["/^release/.*/"],
+            matchUpdateTypes: ["major"],
+            enabled: true
+        },
+        {
             description: "Update Gradle wrapper",
             matchManagers: ["gradle-wrapper"],
             addLabels: ["in:build"],
