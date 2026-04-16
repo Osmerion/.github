@@ -169,7 +169,7 @@
             matchPackageNames: [
                 "gradle/actions"
             ],
-            allowedVersions: "<= 5",
+            allowedVersions: "< 6.0.0",
             description: "Avoid GitHub Actions for Gradle commercial license restrictions"
         }
     ],
