@@ -143,9 +143,9 @@
             enabled: true
         },
         {
-            "description": "Group Kotlin specific dependencies",
-            "groupName": "Kotlin",
-            "matchPackageNames": [
+            description: "Group Kotlin specific dependencies",
+            groupName: "Kotlin",
+            matchPackageNames: [
                 "/^org\\.jetbrains\\.kotlin[\\.:][\\w.-]*/"
             ]
         },
@@ -166,11 +166,11 @@
              * terms. We won't upgrade to version 6.0.0 (or later) for now.
              * (See also https://github.com/gradle/actions/releases/tag/v6.0.0)
              */
-            "matchPackageNames": [
+            matchPackageNames: [
                 "gradle/actions"
             ],
-            "allowedVersions": "<6.0.0",
-            "description": "Avoid GitHub Actions for Gradle commercial license restrictions"
+            allowedVersions: "<6",
+            description: "Avoid GitHub Actions for Gradle commercial license restrictions"
         }
     ],
     prHourlyLimit: 0,
