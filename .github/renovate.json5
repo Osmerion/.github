@@ -173,6 +173,9 @@
             description: "Avoid GitHub Actions for Gradle commercial license restrictions"
         }
     ],
+    ignorePaths: [
+        "/gradle/verification-metadata.xml"
+    ],
     prHourlyLimit: 0,
     prConcurrentLimit: 0,
     useBaseBranchConfig: "merge",
