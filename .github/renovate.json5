@@ -48,6 +48,7 @@
     lockFileMaintenance: {
         enabled: true
     },
+    groupSingleUpdates: false,
     packageRules: [
         {
             matchBaseBranches: ["/^release/.*/"],
