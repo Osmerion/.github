@@ -5,7 +5,6 @@
         "group:monorepos",
         "group:recommended",
         "helpers:pinGitHubActionDigests",
-        ":rebaseStalePrs",
         ":semanticCommitTypeAll(chore)"
     ],
     labels: ["a:chore", "in:dependencies"],
